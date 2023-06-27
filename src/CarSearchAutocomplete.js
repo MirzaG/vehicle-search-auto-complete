@@ -13,7 +13,7 @@ const CarSearchAutocomplete = () => {
     }, []);
     
     useEffect(() => {
-        if(searchTerm.trim() && suggestions.length && suggestions[0] === searchTerm){
+        if(searchTerm.trim() && document.querySelector("#vehicleAutoSuggest").innerText === searchTerm){
             handleSelectCar(suggestions[0]);
         }
     }, [suggestions])
