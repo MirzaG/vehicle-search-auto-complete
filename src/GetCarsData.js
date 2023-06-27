@@ -13,5 +13,5 @@ const createRandomVehicle = () => {
   }
   
 export const CARS = faker.helpers.multiple(createRandomVehicle, {
-    count: 5000,
+    count: 500,
 });
